@@ -31,12 +31,14 @@ class _HomePageState extends State<HomePage> {
     var initPos = CameraPosition(target: LatLng(lat, lon), zoom: 8);
     return Scaffold(
       body: GoogleMap(
-        onTap: (l) {
-          // print("Taped Location La:t: ${l.latitude} Lon: ${l.longitude}");
-          // lat = l.latitude;
-          // lon = l.longitude;
+        // polylines: {Polyline(polylineId: PolylineId('1'))},
+        onTap: (latLng) {
+          // print(
+          //     "Taped Location La:t: ${latLng.latitude} Lon: ${latLng.longitude}");
+          // lat = latLng.latitude;
+          // lon = latLng.longitude;
 
-          setState(() {});
+          // setState(() {});
         },
         initialCameraPosition: initPos,
         markers: {
